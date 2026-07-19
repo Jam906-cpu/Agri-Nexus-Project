@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agri-Nexus - Create an Account</title>
+    <link rel="stylesheet" href="Create account.css">
+    <link rel="stylesheet" href="Create account.js">
+</head>
+<body style="background-color: #27612ce9">
+
+    <div class="divi">
+        <p style="text-align: center; margin-bottom: 25px;"><b>CREATE AN ACCOUNT</b></p>
+        
+        <form>
+            
+            <label for="account type"><b>Account Type:</b></label>
+            <select id="account type" class="input" name="account type" required>
+                <option  disabled selected>Select user role</option>
+                <option value="farmer">Farmer / Seller</option>
+                <option value="buyer">Buyer / Businessman/Businesswoman</option>
+            </select>
+
+            <label for="fullname"><b>Full Name:</b></label>
+            <input type="text" id="fullname" class="input" name="fullname" placeholder="First and Last name" required>
+
+            <label for="email"><b>E-MAIL:</b></label>
+            <input type="email" id="email" class="input" name="email" placeholder="xxxxxxxxxxx@gmail.com" required>
+
+            <label for="phone"><b>Phone Number:</b></label>
+            <input type="tel" id="phone" class="input" name="phone" placeholder="+250-7xxxxxxxx" required>
+
+            <label for="province"><b>Province:</b></label>
+            <select id="province" class="input" name="province" required>
+                <option value="" disabled selected>Select your Province</option>
+                <option value="Kigali">Kigali City</option>
+                <option value="Eastern">Eastern Province</option>
+                <option value="Northern">Northern Province</option>
+                <option value="Southern">Southern Province</option>
+                <option value="Western">Western Province</option>
+            </select>
+
+            <label for="password"><b>Password:</b></label>
+            <input type="password" id="password" class="input" name="password" required>
+
+            <input type="submit" class="submit">
+        </form>
+
+        <script>
+            // Grab the form and the fields we want to check
+            var signupForm = document.querySelector("form");
+            var passwordBox = document.getElementById("password");
+            var fullnameBox = document.getElementById("fullname");
+
+            // Run this when the form is submitted (Sign Up button clicked)
+            signupForm.addEventListener("submit", function (event) {
+
+                // Stop the page from reloading/submitting for real
+                event.preventDefault();
+
+                // Simple password length check
+                if (passwordBox.value.length < 6) {
+                    alert("Your password should be at least 6 characters long.");
+                    return;
+                }
+
+                // If everything is fine, show a success message
+                alert("Account created successfully! Welcome, " + fullnameBox.value + ".");
+            });
+        </script>
+
+        <p style="text-align: center; margin-top: 20px; font-size: 14px;">
+            Already have an account? <a href="login page.html" style="text-decoration: none; color: #27612ce9; font-weight: bold;">Log in here</a>
+        </p>
+    </div>
+
+</body>
+</html>

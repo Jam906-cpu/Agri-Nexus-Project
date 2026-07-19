@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Visitor Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Visitor Page.css">
+    <link rel="stylesheet" href="Visitor page.js">
+    
+</head>
+<body>
+    <form>
+        <header>
+            <h1 class="title">Visitor Registration</h1>
+            <p class="subtitle">Connect directly with Rwandan farmers and access verified market data to make informed decisions.</p>
+        </header>
+        <hr class="line">
+        <fieldset>
+            <legend class="label">PERSONAL INFORMATION</legend>
+
+            <label for="firstname" class="fieldname">First Name</label><br>
+            <input type="text" id="firstname" class="fieldinput" placeholder="e.g.Jean" required autocomplete="on"><br><br>
+
+            <label for="lastname" class="fieldname">Last Name</label><br>
+            <input type="text" id="lastname" class="fieldinput" placeholder="e.g.HABIMANA" required autocomplete="on"><br><br>
+
+            <label for="e-mail" class="fieldname">E-mail</label><br>
+            <input type="text" id="e-mail" class="fieldinput" placeholder="e.g.jeanhabimana@example.com" autocomplete="on"><br><br>
+
+            <label for="phone-number" class="fieldname">Phone Number</label><br>
+            <input type="number" id="phone-number" class="fieldinput" placeholder="e.g.+2507-x-xxxxxxx" required pattern="+2507-[8,9,2,3]{1}-[0-9]{7}"><br><br>
+
+            <h2 class="label">AGRICULTURE INFORMATION</h2>
+            <p class="fieldname">Do you engage in any agriculture business or work?</p>
+
+            <button type="button" class="option">Yes</button><br><br>
+            <button type="button" class="option">No</button><br><br>
+
+            <div class="infobox">
+                <p class="infotext">Great! AgriNexus is built for people like you. You will get access to market prices,</p>
+                <p class="infotext" style="padding-top: 0%; padding-bottom: 5px;">satellite farm tools, and direct connections with buyers.</p>
+            </div>
+
+            <h2 class="label">FEATURES OF INTEREST</h2>
+
+            <input type="checkbox" id="market-prices" name="feature" value="market-prices">
+            <label for="market-prices" class="fieldname">Market price tracking & transparency</label><br>
+
+            <input type="checkbox" id="QR" value="QR">
+            <label for="QR" class="fieldname">QR code crop origin & harvest info</label><br>
+
+            <input type="checkbox" id="Satellite" value="Satellite">
+            <label for="Satellite" class="fieldname">Satellite field health maps</label><br>
+
+            <input type="checkbox" id="ai" value="ai">
+            <label for="ai" class="fieldname">AI-driven crop advisory & weather alerts</label><br>
+
+            <input type="checkbox" id="labour" value="labour">
+            <label for="labour" class="fieldname">Labour management & farm updates</label><br><br>
+
+            <h2 class="label">ADDITIONAL NOTES</h2>
+            <p class="fieldname">Any specific requirements or questions?</p>
+            <textarea id="notes" name="notes" rows="4" cols="50" class="fieldinput" placeholder="Write your notes here..."></textarea><br><br>
+
+            <div class="lastbox">
+                <input type="radio" id="consent">
+                <label for="consent" class="lastlabel">I consent to the processing of my personal data in accordance with the privacy policy.</label><br>
+            </div>
+
+            <button type="submit" class="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>

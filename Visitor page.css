@@ -1,0 +1,120 @@
+body {
+            background-color: #FFFFFF;
+            margin-left: 25%;
+            margin-right: 25%;
+            padding: 50px;
+            border: 1px solid #D6E8DF;
+            border-radius: 10px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .title {
+            font-family: 'playfair display', serif;
+            font-weight: 500;
+            color: #1a2a22;
+            font-size: 20px;
+        }
+
+        .subtitle {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 300;
+            color: #4a6858;
+            font-size: 13px;
+        }
+
+        .line {
+            border: 1px solid #D6E8DF;
+        }
+
+        .label {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+            color: #7E9E8E;
+            font-size: 10.5px;
+        }
+
+        .fieldname {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 400;
+            color: #4A6858;
+            font-size: 13px;
+        }
+
+        .fieldinput {
+            color: #757575;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 400;
+            font-size: 13.5px;
+            background-color: #F7F9F7;
+            border-color: #D6E8DF;
+            width: 95%;
+            border-radius: 10px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            padding-left: 13px;
+            padding-right: 13px;
+        }
+
+        .option {
+            background-color: #F7F9F7;
+            border-color: #D6E8DF;
+            color: #4A6858;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+            font-size: 13.5px;
+            width: 100%;
+            border-radius: 10px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+
+        .infobox {
+            background-color: #F7F9F7;
+            border-color: #D6E8DF;
+            border-radius: 10px;
+        }
+
+        .infotext {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 400;
+            font-size: 13.5px;
+            width: 100%;
+            padding-top: 10px;
+            padding-left: 13px;
+            padding-right: 13px;
+            color: #757575;
+        }
+
+        .last {
+            padding-bottom: 10px;
+        }
+
+        .lastbox {
+            background-color: #92ee92;
+            border-color: #D6E8DF;
+            border-radius: 10px;
+            opacity: 0.8;
+            margin-bottom: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .lastlabel {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 400;
+            color: #000201;
+            font-size: 13px;
+        }
+
+        .submit {
+            background-color: #1D9E75;
+            border-color: #1D9E75;
+            color: #FFFFFF;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 500;
+            font-size: 13.5px;
+            width: 100%;
+            border-radius: 10px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
